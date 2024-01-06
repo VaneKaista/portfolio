@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="text-black flex bg-black border-2">
+        <div class=" flex justify-start items-center  bg-black p-2 float-left">
+            <!--remplace le h1 par un logo-->
+            <h1 class="p-2 bg-white rounded-lg justify-start items-center ">Diaferia Mickael</h1>
+            <!--remplace le h1 par un logo-->
+        </div>
+        <section class="container">
+            <div class="flex float-right bg-black justify-end ">
+                <nav class="relative flex justify-end items-center  m-5">
+                    <button class="navbar-burger flex items-center  text-white px-3 lg:hidden">
+                        <svg class="block max-lg:mt-4 lg:mt-5 h-4 w-4 fill-current" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                    <ul
+                        class="hidden flex justify-end lg:flex justify-end lg:items-center lg:space-x-6 lg:mx-auto py-2">
+                        <li><a href="#qui"
+                                class="hover:bg-slate-800 text-white lg:px-10 lg:border-2 rounded-lg py-1 lg:mx-10">Qui
+                                suis
+                                je
+                                ?</a>
+                        </li>
+                        <li><a href="#quali"
+                                class="hover:bg-slate-800 text-white lg:px-10 lg:border-2 rounded-lg py-1 lg:mx-5">Mes
+                                qualifications</a></li>
+                        <li><a href="#"
+                                class="hover:bg-slate-800 text-white lg:px-10 lg:border-2 rounded-lg py-1 lg:mx-10">Link
+                                3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                const navbarBurger = document.querySelector(".navbar-burger");
+                const navLinks = document.querySelector("nav ul");
+
+                navbarBurger.addEventListener("click", () => {
+                    navLinks.classList.toggle("hidden");
+                    navLinks.classList.toggle("flex");
+                });
+            });
+        </script>
+    </header>
+    <section class="bg-fixed bg-cover grid bg-black">
+        <div class="grid grid-cols-3">
+            <div class="flex justify-center items-center">
+                <h3 class="bg-white rounded-lg">
+                    <br />&nbsp;&nbsp;DEVELOPPEUR WEB / MOBILE &nbsp;&nbsp;<br />&nbsp;
+                </h3>
+            </div>
+            <div class="flex justify-center items-center">
+                <img class="rounded-full p-5" src="/asset/matete.PNG" />
+            </div>
+            <div class="flex justify-center items-center">
+                <h3 class="bg-white rounded-lg">
+                    <br />&nbsp;&nbsp;FRONT & BACK&nbsp;&nbsp;<br />&nbsp;
+                </h3>
+            </div>
+        </div>
+    </section>
+    <div class="bg-slate-800">
+        <section class="bg-slate-800 text-white">
+            <div class="flex justify-center">
+                <h3 class="mt-10 text-4xl border-2 p-2 rounded-lg" id="qui">
+                    QUI SUIS JE ?
+                </h3>
+            </div>
+            <div class="sm:m-2">
+                <div class="grid grid-cols-2 sm:mr-10 sm:space-x-10">
+                    <div class="justify-start max-sm:m-3 sm:m-10">
+                        <h3 class="flex justify-center m-5 underline underline-offset-1 text-xl">
+                            Ma passion codage
+                        </h3>
+                        <p class="border-2 p-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            eaque, hic architecto quia blanditiis illum veritatis voluptates
+                            magnam provident harum. Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Voluptas eius laborum debitis deserunt
+                            voluptatibus ducimus voluptates facilis expedita perferendis
+                            suscipit.
+                        </p>
+                    </div>
+
+                    <div class="sm:m-10 justify-end max-sm:m-3">
+                        <h3 class="flex justify-center m-5 underline underline-offset-1 text-xl">
+                            Mes passions externes
+                        </h3>
+                        <p class="border-2 p-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti autem asperiores, illum distinctio facere cum sit
+                            exercitationem omnis saepe quasi! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Natus corporis ullam eos iure
+                            dolore ea tempora eveniet recusandae at itaque.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-white mt-20">
+            <div class="flex justify-center">
+                <h3 class="text-4xl border-2 p-2 rounded-lg" id="quali">
+                    Mes qualifications
+                </h3>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
