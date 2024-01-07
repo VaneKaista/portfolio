@@ -10,9 +10,9 @@
 
 <body>
     <header class="text-black flex bg-black border-2">
-        <div class=" flex justify-start items-center  bg-black p-2 float-left">
+        <div class=" flex justify-start items-center bg-black p-2 float-left">
             <!--remplace le h1 par un logo ez-->
-            <h1 class="p-2 bg-white rounded-lg justify-start items-center ">Diaferia Mickael</h1>
+            <img class="p-2 justify-start items-center  w-20" src="/asset/DiaferiaMickael.png">
             <!--remplace le h1 par un logo ez-->
         </div>
         <section class="container">
@@ -25,7 +25,7 @@
                         </svg>
                     </button>
                     <ul
-                        class="hidden flex justify-end lg:flex justify-end lg:items-center lg:space-x-6 lg:mx-auto py-2">
+                        class="hidden flex justify-end lg:flex justify-end lg:items-center lg:space-x-6 lg:mx-auto py-4">
                         <li><a href="#qui"
                                 class="hover:bg-slate-800 text-white lg:px-10 lg:border-2 rounded-lg py-1 lg:mx-10">Qui
                                 suis
@@ -35,9 +35,9 @@
                         <li><a href="#quali"
                                 class="hover:bg-slate-800 text-white lg:px-10 lg:border-2 rounded-lg py-1 lg:mx-5">Mes
                                 qualifications</a></li>
-                        <li><a href="#"
-                                class="hover:bg-slate-800 text-white lg:px-10 lg:border-2 rounded-lg py-1 lg:mx-10">Link
-                                3</a></li>
+                        <li><a href="#projets"
+                                class="hover:bg-slate-800 text-white lg:px-10 lg:border-2 rounded-lg py-1 lg:mx-10">Mes
+                                projets</a></li>
                     </ul>
                 </nav>
             </div>
@@ -74,7 +74,7 @@
     <div class="bg-slate-800">
         <section class="bg-slate-800 text-white">
             <div class="flex justify-center">
-                <h3 class="mt-10 text-4xl border-2 p-2 rounded-lg" id="qui">
+                <h3 class="mt-20 text-4xl border-2 p-2 rounded-lg" id="qui">
                     QUI SUIS JE ?
                 </h3>
             </div>
@@ -109,14 +109,79 @@
                 </div>
             </div>
         </section>
-        <section class="text-white mt-20">
+        <section class="text-white mt-20 bg-slate-400">
             <div class="flex justify-center">
-                <h3 class="text-4xl border-2 p-2 rounded-lg" id="quali">
+                <h3 class="text-4xl border-2 p-2 rounded-lg mt-20" id="quali">
                     Mes qualifications
                 </h3>
             </div>
+            <div class=" sm:ml-44 sm:mr-44 ">
+                <div class="grid grid-cols-2  mt-10 ml-5 mr-5">
+                    <div class="flex justify-center border-2">
+                        <h3 class=" p-2 text-xl"> Front</h3>
+                    </div>
+                    <div class="flex justify-center border-2">
+                        <h3 class="p-2 text-xl">Back</h3>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 ">
+
+                    <div class="border-2 ml-5  flex justify-center ">
+                        <div class=" flex-col space-y-6">
+                            <img class="w-40 p-2" src="/asset/icons8-html-5-96.png">
+                            <img class="w-40 p-2" src="/asset/icons8-css3-96.png">
+                            <img class="w-40 p-2" src="/asset/icons8-javascript-96.png">
+                        </div>
+                    </div>
+                    <div class="border-2 mr-5  flex justify-center ">
+                        <div class=" flex-col space-y-6">
+                            <img class="w-40 p-2" src="/asset/icons8-logo-de-mysql-100.png">
+                            <img class="w-40 p-2" src="/asset/icons8-logo-php-80.png">
+                            <img class="w-40 p-2" src="/asset/icons8-javascript-96.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-20 mt-10"><br></div>
+
+        </section>
+
+        <section class="text-white mt-20 ">
+            <div class="flex justify-center ">
+                <h3 class="text-4xl border-2 p-2 rounded-lg" id="projets">
+                    Mes projets
+                </h3>
+            </div>
+            <div class="grid grid-cols-3">
+                <a class="hover:bg-slate-600 mt-10 sm:ml-5 max-sm:ml-2  " href="">
+                    <div class="flex justify-center  border-2 mb-10 ">
+                        <div class="mt-10">
+                            <div class="flex justify-center">
+                                <img class="w-40 max-sm:w-20 p-2" src="/asset/portfolioimg.PNG ">
+                            </div>
+                            <div>
+                                <p class="flex sm:ml-5 p-2">Voici mon premier projet<br>qui est mon portfolio </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
         </section>
     </div>
+    <section>
+        <div class="flex mt-10 mb-10 space-x-20 justify-center">
+            <!--remplace git ez-->
+            <a class="p-1 hover:bg-slate-600" href="https://github.com/VaneKaista" target="_blank"><img class="w-10"
+                    src="/asset/github.png"></a>
+            <!--remplace linkdin ez-->
+            <a class="hover:bg-slate-600" href="https://www.linkedin.com/in/mickael-diaferia-86a246248/"
+                target="_blank"><img class="w-10" src="/asset/linkedin.png"></a>
+            <!--remplace cv ez-->
+            <a class="hover:bg-slate-600"><img class="w-10" src="/asset/cv.png"></a>
+            <!--remplace mail ez-->
+            <a class="hover:bg-slate-600" href="mailto:diaferiamick@gmail.com"><img class="w-10"
+                    src="/asset/email.png"></a>
+        </div>
+    </section>
 </body>
 
 </html>
