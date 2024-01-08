@@ -1,16 +1,16 @@
-var clientSlider = document.getElementById('client-slider');
-var clientList = clientSlider.getElementsByTagName('li');
+var toutlogo = document.getElementById('toutlogo');
+var toutlogolist = toutlogo.getElementsByTagName('li');
 
 setInterval(() => {
-    clientSlider.style.transform = "translateX(-20%)";
+    toutlogo.style.transform = "translateX(-20%)";
 }, 3000);
 
-clientSlider.addEventListener('transitionend', function () {
-    clientSlider.appendChild(clientSlider.firstElementChild);
+toutlogo.addEventListener('transitionend', function () {
+    toutlogo.appendChild(toutlogo.firstElementChild);
 
-    clientSlider.style.transition = "none";
-    clientSlider.style.transform = "translateX(0)";
+    toutlogo.style.transition = "none";
+    toutlogo.style.transform = "translateX(0)";
     setTimeout(() => {
-        clientSlider.style.transition = "0.3s";
+        toutlogo.style.transition = "0.3s";
     });
 })
